@@ -132,23 +132,6 @@
   ],
   "teachers": [
     {
-      "id": "1",
-      "name": "Dr. Robert Johnson",
-      "email": "r.johnson@school.edu",
-      "phone": "+1234567800",
-      "userId": 2,
-      "experience": 15,
-      "qualification": "PhD in Mathematics",
-      "dateOfJoining": "2010-08-15",
-      "status": "active",
-      "subjectIds": [
-        1
-      ],
-      "classIds": [
-        2
-      ]
-    },
-    {
       "id": "2",
       "userId": 5,
       "name": "Prof. Emily Davis",
@@ -182,6 +165,16 @@
         1,
         2
       ]
+    },
+    {
+      "name": "Mr. Ali Ahmed",
+      "email": "Ali@gmail.com",
+      "phone": "",
+      "experience": 5,
+      "qualification": "MA in Arabic",
+      "dateOfJoining": "2026-04-22",
+      "status": "active",
+      "id": "34bf"
     }
   ],
   "parents": [
@@ -734,6 +727,42 @@
       "status": "late",
       "teacherId": 2,
       "remarks": "Traffic delay"
+    },
+    {
+      "id": "d2ef",
+      "studentId": 1,
+      "classId": "1",
+      "date": "2026-04-22",
+      "status": "present",
+      "teacherId": 1,
+      "remarks": ""
+    },
+    {
+      "id": "c464",
+      "studentId": 2,
+      "classId": "1",
+      "date": "2026-04-22",
+      "status": "absent",
+      "teacherId": 1,
+      "remarks": ""
+    },
+    {
+      "id": "dc3b",
+      "studentId": 3,
+      "classId": "1",
+      "date": "2026-04-22",
+      "status": "late",
+      "teacherId": 1,
+      "remarks": ""
+    },
+    {
+      "id": "28e5",
+      "studentId": 4,
+      "classId": "1",
+      "date": "2026-04-22",
+      "status": "present",
+      "teacherId": 1,
+      "remarks": ""
     }
   ],
   "notes": [
@@ -824,7 +853,7 @@
       "author": "Admin"
     }
   ],
-   "resources": [
+  "resources": [
     {
       "id": "1",
       "enTitle": "Getting Started with EduManage",
@@ -880,7 +909,7 @@
       "thumbnail": "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=400"
     }
   ],
-   "team": [
+  "team": [
     {
       "id": "1",
       "name": "Dr. Patricia Anderson",
