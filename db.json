@@ -1,0 +1,1078 @@
+{
+  "users": [
+    {
+      "id": "1",
+      "email": "admin@school.com",
+      "password": "admin123",
+      "role": "admin",
+      "name": "Admin User",
+      "status": "active"
+    },
+    {
+      "id": "2",
+      "email": "teacher1@school.com",
+      "password": "teacher123",
+      "role": "teacher",
+      "name": "Dr. Robert Johnson",
+      "status": "active",
+      "teacherId": 1
+    },
+    {
+      "id": "3",
+      "email": "student1@school.com",
+      "password": "student123",
+      "role": "student",
+      "name": "Emma Johnson",
+      "status": "active",
+      "studentId": 1
+    },
+    {
+      "id": "4",
+      "email": "parent1@school.com",
+      "password": "parent123",
+      "role": "parent",
+      "name": "Michael Parent",
+      "status": "active",
+      "parentId": 1
+    },
+    {
+      "id": "5",
+      "email": "teacher2@school.com",
+      "password": "teacher123",
+      "role": "teacher",
+      "name": "Prof. Emily Davis",
+      "status": "active",
+      "teacherId": 2
+    },
+    {
+      "id": "6",
+      "email": "student2@school.com",
+      "password": "student123",
+      "role": "student",
+      "name": "Michael Chen",
+      "status": "active",
+      "studentId": 2
+    },
+    {
+      "id": "7",
+      "email": "hassan@gmail.com",
+      "password": "hassan123",
+      "role": "student",
+      "name": "hassan",
+      "status": "active",
+      "studentId": 3
+    },
+    {
+      "id": "8",
+      "email": "Ali@gmail.com",
+      "password": "ali123",
+      "role": "student",
+      "name": "Ali",
+      "status": "active",
+      "studentId": 4
+    }
+  ],
+  "students": [
+    {
+      "id": "1",
+      "userId": 3,
+      "name": "Emma Johnson",
+      "email": "emma.j@school.edu",
+      "classId": 1,
+      "parentId": 1,
+      "dateOfBirth": "2008-05-15",
+      "address": "123 Main St",
+      "phone": "+1234567890",
+      "status": "active",
+      "enrollmentDate": "2023-09-01",
+      "avatar": "EJ"
+    },
+    {
+      "id": "2",
+      "userId": 6,
+      "name": "Michael Chen",
+      "email": "michael.c@school.edu",
+      "classId": 1,
+      "parentId": 2,
+      "dateOfBirth": "2008-08-22",
+      "address": "456 Oak Ave",
+      "phone": "+1234567891",
+      "status": "active",
+      "enrollmentDate": "2023-09-01",
+      "avatar": "MC"
+    },
+    {
+      "id": "3",
+      "name": "hassan",
+      "email": "hassan@gmail.com",
+      "classId": 1,
+      "parentId": 1,
+      "dateOfBirth": "2001-03-18",
+      "address": "",
+      "phone": "125478963",
+      "status": "active",
+      "enrollmentDate": "2026-03-29",
+      "avatar": "H",
+      "userId": 7
+    },
+    {
+      "id": "4",
+      "name": "Ali",
+      "email": "Ali@gmail.com",
+      "classId": 1,
+      "parentId": 1,
+      "dateOfBirth": "2001-04-01",
+      "address": "",
+      "phone": "122222",
+      "status": "active",
+      "enrollmentDate": "2026-03-29",
+      "avatar": "A",
+      "userId": 8
+    }
+  ],
+  "teachers": [
+    {
+      "id": "1",
+      "name": "Dr. Robert Johnson",
+      "email": "r.johnson@school.edu",
+      "phone": "+1234567800",
+      "userId": 2,
+      "experience": 15,
+      "qualification": "PhD in Mathematics",
+      "dateOfJoining": "2010-08-15",
+      "status": "active",
+      "subjectIds": [
+        1
+      ],
+      "classIds": [
+        2
+      ]
+    },
+    {
+      "id": "2",
+      "userId": 5,
+      "name": "Prof. Emily Davis",
+      "email": "e.davis@school.edu",
+      "phone": "+1234567801",
+      "experience": 12,
+      "qualification": "MSc in Physics",
+      "dateOfJoining": "2012-09-01",
+      "status": "active",
+      "subjectIds": [
+        2
+      ],
+      "classIds": [
+        2
+      ]
+    },
+    {
+      "id": "3",
+      "userId": null,
+      "name": "Mr. Alan Smith",
+      "email": "a.smith@school.edu",
+      "phone": "+1234567802",
+      "experience": 8,
+      "qualification": "MA in English",
+      "dateOfJoining": "2016-08-20",
+      "status": "active",
+      "subjectIds": [
+        4
+      ],
+      "classIds": [
+        1,
+        2
+      ]
+    }
+  ],
+  "parents": [
+    {
+      "name": "Michael Parent",
+      "email": "parent1@school.com",
+      "phone": "+1234567810",
+      "address": "123 Main St",
+      "occupation": "Engineer",
+      "studentIds": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "id": "1"
+    },
+    {
+      "id": "2",
+      "userId": null,
+      "name": "Jane Parent",
+      "email": "parent2@school.com",
+      "phone": "+1234567811",
+      "address": "456 Oak Ave",
+      "occupation": "Doctor",
+      "studentIds": [
+        2,
+        4
+      ]
+    },
+    {
+      "id": "3",
+      "userId": null,
+      "name": "Bob Parent",
+      "email": "parent3@school.com",
+      "phone": "+1234567812",
+      "address": "789 Elm St",
+      "occupation": "Architect",
+      "studentIds": [
+        3,
+        5
+      ]
+    }
+  ],
+  "classes": [
+    {
+      "name": "Class 10-A",
+      "grade": "10",
+      "section": "A",
+      "teacherId": 1,
+      "room": "101",
+      "capacity": 30,
+      "academicYear": "2024-2025",
+      "id": "1",
+      "studentIds": [
+        1,
+        2,
+        3,
+        4
+      ]
+    },
+    {
+      "name": "Class 10-B",
+      "grade": "10",
+      "section": "B",
+      "teacherId": 1,
+      "room": "102",
+      "capacity": 30,
+      "academicYear": "2024-2025",
+      "id": "2"
+    },
+    {
+      "name": "Class 20-C",
+      "grade": "10",
+      "section": "A",
+      "teacherId": 2,
+      "room": "103",
+      "capacity": 30,
+      "academicYear": "2026-2027",
+      "id": "PIxVUdj1KXs"
+    }
+  ],
+  "subjects": [
+    {
+      "name": "Physics",
+      "code": "PHY10",
+      "teacherId": 1,
+      "credits": 4,
+      "color": "purple",
+      "classIds": [],
+      "id": "1"
+    },
+    {
+      "name": "Mathematics",
+      "code": "MATH10",
+      "teacherId": 2,
+      "credits": 4,
+      "color": "indigo",
+      "classIds": [],
+      "id": "2"
+    },
+    {
+      "name": "English",
+      "code": "ENG10",
+      "teacherId": 3,
+      "credits": 3,
+      "color": "green",
+      "classIds": [],
+      "id": "3"
+    },
+    {
+      "name": "Arabic",
+      "code": "A10",
+      "teacherId": null,
+      "credits": 4,
+      "color": "indigo",
+      "classIds": [],
+      "id": "4"
+    }
+  ],
+  "schedule": [
+    {
+      "id": "1",
+      "classId": 1,
+      "subjectId": 1,
+      "teacherId": 1,
+      "day": "Monday",
+      "startTime": "08:00",
+      "endTime": "09:00",
+      "room": "101"
+    },
+    {
+      "id": "2",
+      "classId": 1,
+      "subjectId": 2,
+      "teacherId": 2,
+      "day": "Monday",
+      "startTime": "09:00",
+      "endTime": "10:00",
+      "room": "Lab-A"
+    },
+    {
+      "id": "3",
+      "classId": 1,
+      "subjectId": 3,
+      "teacherId": 3,
+      "day": "Monday",
+      "startTime": "10:30",
+      "endTime": "11:30",
+      "room": "101"
+    },
+    {
+      "id": "4",
+      "classId": 1,
+      "subjectId": 4,
+      "teacherId": 3,
+      "day": "Tuesday",
+      "startTime": "08:00",
+      "endTime": "09:00",
+      "room": "Lab-B"
+    },
+    {
+      "id": "5",
+      "classId": 1,
+      "subjectId": 1,
+      "teacherId": 1,
+      "day": "Tuesday",
+      "startTime": "09:00",
+      "endTime": "10:00",
+      "room": "101"
+    },
+    {
+      "id": "6",
+      "classId": 1,
+      "subjectId": 2,
+      "teacherId": 2,
+      "day": "Wednesday",
+      "startTime": "08:00",
+      "endTime": "09:00",
+      "room": "Lab-A"
+    },
+    {
+      "id": "7",
+      "classId": 1,
+      "subjectId": 3,
+      "teacherId": 1,
+      "day": "Wednesday",
+      "startTime": "09:00",
+      "endTime": "10:00",
+      "room": "101"
+    },
+    {
+      "id": "8",
+      "classId": 1,
+      "subjectId": 1,
+      "teacherId": 1,
+      "day": "Thursday",
+      "startTime": "08:00",
+      "endTime": "09:00",
+      "room": "101"
+    },
+    {
+      "id": "9",
+      "classId": 1,
+      "subjectId": 4,
+      "teacherId": 3,
+      "day": "Thursday",
+      "startTime": "09:00",
+      "endTime": "10:00",
+      "room": "Lab-B"
+    },
+    {
+      "id": "10",
+      "classId": 1,
+      "subjectId": 2,
+      "teacherId": 2,
+      "day": "Friday",
+      "startTime": "08:00",
+      "endTime": "09:00",
+      "room": "Lab-A"
+    },
+    {
+      "id": "11",
+      "classId": 1,
+      "subjectId": 3,
+      "teacherId": 1,
+      "day": "Friday",
+      "startTime": "09:00",
+      "endTime": "10:00",
+      "room": "101"
+    }
+  ],
+  "grades": [
+    {
+      "studentId": 1,
+      "subjectId": 1,
+      "teacherId": 1,
+      "examType": "Quiz 2",
+      "marks": 85,
+      "maxMarks": 100,
+      "grade": "A-",
+      "term": "Fall 2024",
+      "date": "2026-03-29",
+      "feedback": "Excellent work on algebra section",
+      "id": "1"
+    },
+    {
+      "id": "2",
+      "studentId": 1,
+      "subjectId": 2,
+      "teacherId": 2,
+      "examType": "Midterm",
+      "marks": 78,
+      "maxMarks": 100,
+      "grade": "B+",
+      "term": "Fall 2024",
+      "date": "2024-11-16",
+      "feedback": "Good understanding of mechanics"
+    },
+    {
+      "id": "3",
+      "studentId": 1,
+      "subjectId": 1,
+      "teacherId": 1,
+      "examType": "Midterm",
+      "marks": 92,
+      "maxMarks": 100,
+      "grade": "A+",
+      "term": "Fall 2024",
+      "date": "2024-11-17",
+      "feedback": "Outstanding essay writing skills"
+    },
+    {
+      "id": "4",
+      "studentId": 1,
+      "subjectId": 3,
+      "teacherId": 3,
+      "examType": "Midterm",
+      "marks": 74,
+      "maxMarks": 100,
+      "grade": "B",
+      "term": "Fall 2024",
+      "date": "2024-11-18",
+      "feedback": "Needs more practice on organic chemistry"
+    },
+    {
+      "id": "5",
+      "studentId": 1,
+      "subjectId": 1,
+      "teacherId": 1,
+      "examType": "Quiz 1",
+      "marks": 18,
+      "maxMarks": 20,
+      "grade": "A+",
+      "term": "Fall 2024",
+      "date": "2024-10-05",
+      "feedback": "Perfect score on limits"
+    },
+    {
+      "id": "6",
+      "studentId": 1,
+      "subjectId": 2,
+      "teacherId": 2,
+      "examType": "Quiz 1",
+      "marks": 15,
+      "maxMarks": 20,
+      "grade": "B+",
+      "term": "Fall 2024",
+      "date": "2024-10-06",
+      "feedback": "Good work"
+    },
+    {
+      "id": "7",
+      "studentId": 1,
+      "subjectId": 1,
+      "teacherId": 1,
+      "examType": "Final",
+      "marks": 88,
+      "maxMarks": 100,
+      "grade": "A",
+      "term": "Fall 2024",
+      "date": "2024-12-20",
+      "feedback": "Very consistent performance"
+    },
+    {
+      "id": "8",
+      "studentId": 1,
+      "subjectId": 2,
+      "teacherId": 2,
+      "examType": "Final",
+      "marks": 82,
+      "maxMarks": 100,
+      "grade": "A-",
+      "term": "Fall 2024",
+      "date": "2024-12-21",
+      "feedback": "Great improvement!"
+    },
+    {
+      "id": "9",
+      "studentId": 2,
+      "subjectId": 1,
+      "teacherId": 1,
+      "examType": "Midterm",
+      "marks": 92,
+      "maxMarks": 100,
+      "grade": "A+",
+      "term": "Fall 2024",
+      "date": "2024-11-15",
+      "feedback": "Exceptional work"
+    },
+    {
+      "id": "10",
+      "studentId": 2,
+      "subjectId": 3,
+      "teacherId": 3,
+      "examType": "Midterm",
+      "marks": 70,
+      "maxMarks": 100,
+      "grade": "B-",
+      "term": "Fall 2024",
+      "date": "2024-11-17",
+      "feedback": "Needs more reading"
+    },
+    {
+      "id": "12",
+      "studentId": 4,
+      "subjectId": 1,
+      "teacherId": 1,
+      "examType": "Midterm",
+      "marks": 80,
+      "maxMarks": 100,
+      "grade": "B+",
+      "term": "Fall 2024",
+      "date": "2024-11-15",
+      "feedback": "Good progress"
+    },
+    {
+      "studentId": 2,
+      "subjectId": 1,
+      "teacherId": 1,
+      "examType": "Final",
+      "marks": 95,
+      "maxMarks": 100,
+      "grade": "A+",
+      "term": "Summer 2025",
+      "date": "2026-03-29",
+      "feedback": "great work",
+      "id": "7204"
+    }
+  ],
+  "attendance": [
+    {
+      "id": "1",
+      "studentId": 1,
+      "classId": 1,
+      "date": "2025-01-06",
+      "status": "present",
+      "teacherId": 1,
+      "remarks": ""
+    },
+    {
+      "id": "2",
+      "studentId": 1,
+      "classId": 1,
+      "date": "2025-01-07",
+      "status": "present",
+      "teacherId": 1,
+      "remarks": ""
+    },
+    {
+      "id": "3",
+      "studentId": 1,
+      "classId": 1,
+      "date": "2025-01-08",
+      "status": "absent",
+      "teacherId": 1,
+      "remarks": "Sick leave"
+    },
+    {
+      "id": "4",
+      "studentId": 1,
+      "classId": 1,
+      "date": "2025-01-09",
+      "status": "present",
+      "teacherId": 1,
+      "remarks": ""
+    },
+    {
+      "id": "5",
+      "studentId": 1,
+      "classId": 1,
+      "date": "2025-01-10",
+      "status": "present",
+      "teacherId": 1,
+      "remarks": ""
+    },
+    {
+      "id": "6",
+      "studentId": 1,
+      "classId": 1,
+      "date": "2025-01-13",
+      "status": "present",
+      "teacherId": 1,
+      "remarks": ""
+    },
+    {
+      "id": "7",
+      "studentId": 1,
+      "classId": 1,
+      "date": "2025-01-14",
+      "status": "late",
+      "teacherId": 1,
+      "remarks": "Arrived 15 mins late"
+    },
+    {
+      "id": "8",
+      "studentId": 1,
+      "classId": 1,
+      "date": "2025-01-15",
+      "status": "present",
+      "teacherId": 1,
+      "remarks": ""
+    },
+    {
+      "id": "9",
+      "studentId": 2,
+      "classId": 1,
+      "date": "2025-01-06",
+      "status": "present",
+      "teacherId": 1,
+      "remarks": ""
+    },
+    {
+      "id": "10",
+      "studentId": 2,
+      "classId": 1,
+      "date": "2025-01-07",
+      "status": "present",
+      "teacherId": 1,
+      "remarks": ""
+    },
+    {
+      "id": "11",
+      "studentId": 2,
+      "classId": 1,
+      "date": "2025-01-08",
+      "status": "present",
+      "teacherId": 1,
+      "remarks": ""
+    },
+    {
+      "id": "12",
+      "studentId": 2,
+      "classId": 1,
+      "date": "2025-01-09",
+      "status": "absent",
+      "teacherId": 1,
+      "remarks": "Family emergency"
+    },
+    {
+      "id": "13",
+      "studentId": 3,
+      "classId": 2,
+      "date": "2025-01-06",
+      "status": "absent",
+      "teacherId": 2,
+      "remarks": "Sick"
+    },
+    {
+      "id": "14",
+      "studentId": 3,
+      "classId": 2,
+      "date": "2025-01-07",
+      "status": "present",
+      "teacherId": 2,
+      "remarks": ""
+    },
+    {
+      "id": "15",
+      "studentId": 4,
+      "classId": 1,
+      "date": "2025-01-06",
+      "status": "present",
+      "teacherId": 1,
+      "remarks": ""
+    },
+    {
+      "id": "16",
+      "studentId": 4,
+      "classId": 1,
+      "date": "2025-01-07",
+      "status": "present",
+      "teacherId": 1,
+      "remarks": ""
+    },
+    {
+      "id": "17",
+      "studentId": 5,
+      "classId": 2,
+      "date": "2025-01-06",
+      "status": "present",
+      "teacherId": 2,
+      "remarks": ""
+    },
+    {
+      "id": "18",
+      "studentId": 5,
+      "classId": 2,
+      "date": "2025-01-07",
+      "status": "late",
+      "teacherId": 2,
+      "remarks": "Traffic delay"
+    }
+  ],
+  "notes": [
+    {
+      "id": "1",
+      "studentId": 1,
+      "teacherId": 1,
+      "subject": "Academic Performance",
+      "content": "Emma shows excellent progress in mathematics. Very attentive in class and always submits work on time. Keep it up!",
+      "date": "2025-01-08",
+      "type": "academic",
+      "visibility": "parent"
+    },
+    {
+      "id": "2",
+      "studentId": 2,
+      "teacherId": 1,
+      "subject": "Homework Completion",
+      "content": "Michael needs to submit 3 pending assignments from last month. Please follow up at home.",
+      "date": "2025-01-09",
+      "type": "behavioral",
+      "visibility": "parent"
+    },
+    {
+      "id": "3",
+      "studentId": 1,
+      "teacherId": 2,
+      "subject": "Physics Lab Performance",
+      "content": "Emma performed well in the recent physics lab experiment. Shows good analytical skills.",
+      "date": "2025-01-10",
+      "type": "academic",
+      "visibility": "student"
+    },
+    {
+      "id": "4",
+      "studentId": 3,
+      "teacherId": 2,
+      "subject": "Attendance Concern",
+      "content": "Sarah has had multiple absences this month. Please ensure regular attendance.",
+      "date": "2025-01-11",
+      "type": "behavioral",
+      "visibility": "parent"
+    },
+    {
+      "studentId": 1,
+      "teacherId": 1,
+      "subject": "Math Competition",
+      "content": "Emma is selected for the inter-school math competition next month. Extra practice sessions required.",
+      "date": "2026-03-29",
+      "type": "achievement",
+      "visibility": "student",
+      "id": "5"
+    },
+    {
+      "id": "6",
+      "studentId": 4,
+      "teacherId": 1,
+      "subject": "Improvement Noted",
+      "content": "James has shown great improvement in this term. His quiz scores are consistently improving.",
+      "date": "2025-01-13",
+      "type": "achievement",
+      "visibility": "parent"
+    }
+  ],
+  "announcements": [
+    {
+      "id": "1",
+      "title": "Semester Exams Schedule Released",
+      "content": "The final semester examination schedule has been published. Students are advised to check the schedule and prepare accordingly.",
+      "date": "2025-01-10",
+      "priority": "high",
+      "author": "Admin"
+    },
+    {
+      "id": "2",
+      "title": "Parent-Teacher Meeting",
+      "content": "Annual Parent-Teacher meeting scheduled for January 25th. All parents are requested to attend.",
+      "date": "2025-01-08",
+      "priority": "medium",
+      "author": "Admin"
+    },
+    {
+      "id": "3",
+      "title": "School Closed on Jan 26",
+      "content": "School will remain closed on January 26th for Republic Day celebration.",
+      "date": "2025-01-07",
+      "priority": "low",
+      "author": "Admin"
+    }
+  ],
+   "resources": [
+    {
+      "id": "1",
+      "enTitle": "Getting Started with EduManage",
+      "enDescription": "Learn the basics of navigating the EduManage platform and accessing key features.",
+      "duration": "5:30",
+      "category": "Basics",
+      "videoUrl": "https://www.youtube.com/embed/7TGgcnhQWLc",
+      "thumbnail": "https://images.unsplash.com/photo-1501504905252-473c47e087f8?w=400"
+    },
+    {
+      "id": "2",
+      "enTitle": "Student Dashboard Overview",
+      "enDescription": "Comprehensive guide to understanding and utilizing the student dashboard features.",
+      "duration": "8:15",
+      "category": "Student Portal",
+      "videoUrl": "https://www.youtube.com/embed/7TGgcnhQWLc",
+      "thumbnail": "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=400"
+    },
+    {
+      "id": "3",
+      "enTitle": "Teacher Dashboard Features",
+      "enDescription": "Explore all the tools available in the teacher dashboard for effective classroom management.",
+      "duration": "10:45",
+      "category": "Teacher Portal",
+      "videoUrl": "https://www.youtube.com/embed/7TGgcnhQWLc",
+      "thumbnail": "https://images.unsplash.com/photo-1524178232363-1fb2b075b655?w=400"
+    },
+    {
+      "id": "4",
+      "enTitle": "Attendance Management",
+      "enDescription": "Learn how to track and manage student attendance efficiently using our system.",
+      "duration": "6:20",
+      "category": "Features",
+      "videoUrl": "https://www.youtube.com/embed/7TGgcnhQWLc",
+      "thumbnail": "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=400"
+    },
+    {
+      "id": "5",
+      "enTitle": "Generating Reports and Analytics",
+      "enDescription": "Master the art of creating detailed reports and understanding analytics dashboards.",
+      "duration": "12:00",
+      "category": "Advanced",
+      "videoUrl": "https://www.youtube.com/embed/7TGgcnhQWLc",
+      "thumbnail": "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=400"
+    },
+    {
+      "id": "6",
+      "enTitle": "Communication Tools",
+      "enDescription": "Discover how to use built-in communication features to connect with students and parents.",
+      "duration": "7:30",
+      "category": "Features",
+      "videoUrl": "https://www.youtube.com/embed/7TGgcnhQWLc",
+      "thumbnail": "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=400"
+    }
+  ],
+   "team": [
+    {
+      "id": "1",
+      "name": "Dr. Patricia Anderson",
+      "Role": "Leadership",
+      "position": "Principal",
+      "email": "p.anderson@school.edu",
+      "phone": "+1 (555) 123-4567",
+      "bio": "With over 25 years of experience in education, Dr. Anderson leads our institution with vision and dedication.",
+      "image": "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=400"
+    },
+    {
+      "id": "2",
+      "name": "Mr. James Thompson",
+      "Role": "Leadership",
+      "position": "Vice Principal",
+      "email": "j.thompson@school.edu",
+      "phone": "+1 (555) 123-4568",
+      "bio": "Mr. Thompson oversees academic programs and ensures excellence in curriculum delivery.",
+      "image": "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=400"
+    },
+    {
+      "id": "3",
+      "name": "Ms. Linda Martinez",
+      "Role": "Leadership",
+      "position": "Academic Coordinator",
+      "email": "l.martinez@school.edu",
+      "phone": "+1 (555) 123-4569",
+      "bio": "Ms. Martinez coordinates all academic activities and maintains high educational standards.",
+      "image": "https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=400"
+    },
+    {
+      "id": "4",
+      "name": "Mr. Robert Williams",
+      "Role": "Member",
+      "position": "Sports Director",
+      "email": "r.williams@school.edu",
+      "phone": "+1 (555) 123-4570",
+      "bio": "A former athlete, Mr. Williams manages all sports activities and physical education programs.",
+      "image": "https://images.unsplash.com/photo-1527980965255-d3b416303d12?w=400"
+    },
+    {
+      "id": "5",
+      "name": "Dr. Susan Clark",
+      "Role": "Member",
+      "position": "School Counselor",
+      "email": "s.clark@school.edu",
+      "phone": "+1 (555) 123-4571",
+      "bio": "Dr. Clark provides guidance and counseling services to help students achieve their full potential.",
+      "image": "https://images.unsplash.com/photo-1551836022-d5d88e9218df?w=400"
+    },
+    {
+      "id": "6",
+      "name": "Mr. David Lee",
+      "Role": "Member",
+      "position": "IT Director",
+      "email": "d.lee@school.edu",
+      "phone": "+1 (555) 123-4572",
+      "bio": "Mr. Lee manages all technology infrastructure and digital learning initiatives.",
+      "image": "https://images.unsplash.com/photo-1517841905240-472988babdf9?w=400"
+    },
+    {
+      "id": "7",
+      "name": "Ms. Emily Johnson",
+      "Role": "Member",
+      "position": "HR Manager",
+      "email": "e.johnson@school.edu",
+      "phone": "+1 (555) 123-4573",
+      "bio": "Ms. Johnson manages recruitment, staff relations, and professional development.",
+      "image": "https://images.unsplash.com/photo-1524504388940-b1c1722653e1?w=400"
+    },
+    {
+      "id": "8",
+      "name": "Mr. Michael Brown",
+      "Role": "Member",
+      "position": "Finance Manager",
+      "email": "m.brown@school.edu",
+      "phone": "+1 (555) 123-4574",
+      "bio": "Mr. Brown oversees budgeting, payroll, and financial planning.",
+      "image": "https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e?w=400"
+    },
+    {
+      "id": "9",
+      "name": "Ms. Sophia Wilson",
+      "Role": "Member",
+      "position": "Admissions Officer",
+      "email": "s.wilson@school.edu",
+      "phone": "+1 (555) 123-4575",
+      "bio": "Ms. Wilson manages student admissions and enrollment processes.",
+      "image": "https://images.unsplash.com/photo-1547425260-76bcadfb4f2c?w=400"
+    },
+    {
+      "id": "10",
+      "name": "Mr. Daniel Harris",
+      "Role": "Member",
+      "position": "Facilities Manager",
+      "email": "d.harris@school.edu",
+      "phone": "+1 (555) 123-4576",
+      "bio": "Mr. Harris ensures the school environment is safe and well-maintained.",
+      "image": "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=400"
+    },
+    {
+      "id": "11",
+      "name": "Ms. Olivia Green",
+      "Role": "Member",
+      "position": "Student Affairs Officer",
+      "email": "o.green@school.edu",
+      "phone": "+1 (555) 123-4577",
+      "bio": "Ms. Green supports student wellbeing and engagement initiatives.",
+      "image": "https://images.unsplash.com/photo-1531123897727-8f129e1688ce?w=400"
+    },
+    {
+      "id": "12",
+      "name": "Mr. Ethan Miller",
+      "Role": "Member",
+      "position": "Library Coordinator",
+      "email": "e.miller@school.edu",
+      "phone": "+1 (555) 123-4578",
+      "bio": "Mr. Miller manages library resources and learning materials.",
+      "image": "https://images.unsplash.com/photo-1519345182560-3f2917c472ef?w=400"
+    },
+    {
+      "id": "13",
+      "name": "Ms. Chloe Adams",
+      "Role": "Member",
+      "position": "Communications Officer",
+      "email": "c.adams@school.edu",
+      "phone": "+1 (555) 123-4579",
+      "bio": "Ms. Adams handles school communications and public relations.",
+      "image": "https://images.unsplash.com/photo-1488426862026-3ee34a7d66df?w=400"
+    }
+  ],
+  "news": [
+    {
+      "id": "1",
+      "title": "Annual Sports Day Successfully Concluded",
+      "arTitle": "اختتام يوم الرياضة السنوي بنجاح",
+      "excerpt": "Our school's annual sports day was a grand success with over 500 participants competing in various events.",
+      "arExcerpt": "كان يوم الرياضة السنوي لمدرستنا نجاحًا كبيرًا مع مشاركة أكثر من 500 مشارك في فعاليات متنوعة.",
+      "content": "The annual sports day held on December 15, 2024, was a resounding success. Students from all grades participated enthusiastically in various sporting events including track and field, basketball, volleyball, and swimming competitions. The event was graced by local sports personalities who encouraged students to pursue excellence in both academics and sports. Special recognition was given to outstanding performers who broke previous records. The day concluded with an award ceremony where medals and certificates were distributed to winners and participants.",
+      "arContent": "كان يوم الرياضة السنوي الذي أقيم في 15 ديسمبر 2024 نجاحًا باهرًا. شارك طلاب من جميع الصفوف بحماس في أحداث رياضية متنوعة شملت سباقات المضمار والميدان وكرة السلة والكرة الطائرة ومسابقات السباحة. حضر الحدث شخصيات رياضية محلية شجعت الطلاب على السعي للتميز في كل من الأكاديميات والرياضة. تم منح اعتراف خاص للأداء المتميز الذي حطم الأرقام القياسية السابقة. اختتم اليوم بحفل توزيع الجوائز حيث تم توزيع الميداليات والشهادات على الفائزين والمشاركين.",
+      "date": "2024-12-15",
+      "author": "Admin Team",
+      "arAuthor": "فريق الإدارة",
+      "category": "Events",
+      "arCategory": "الفعاليات",
+      "image": "https://images.unsplash.com/photo-1461896836934-ffe607ba8211?w=800"
+    },
+    {
+      "id": "2",
+      "title": "New Science Lab Inauguration",
+      "arTitle": "افتتاح مختبر العلوم الجديد",
+      "excerpt": "State-of-the-art science laboratory equipped with modern equipment and technology for enhanced learning.",
+      "arExcerpt": "مختبر علوم متطور مجهز بأحدث المعدات والتقنيات لتعزيز التعلم.",
+      "content": "We are thrilled to announce the inauguration of our new state-of-the-art science laboratory on December 10, 2024. The lab features cutting-edge equipment including digital microscopes, spectrophotometers, and advanced chemistry apparatus. This facility will enable students to conduct sophisticated experiments and develop practical skills essential for their scientific pursuits. The lab also includes a dedicated safety section and interactive learning modules. Our science faculty has undergone specialized training to maximize the potential of these new resources.",
+      "arContent": "يسعدنا أن نعلن عن افتتاح مختبر العلوم المتطور الجديد في 10 ديسمبر 2024. يتميز المختبر بمعدات متطورة تشمل المجاهر الرقمية والمقاييس الطيفية وأجهزة الكيمياء المتقدمة. سيمكن هذا المرفق الطلاب من إجراء تجارب متطورة وتطوير المهارات العملية الأساسية لمتابعاتهم العلمية. يشمل المختبر أيضًا قسمًا مخصصًا للسلامة ووحدات تعليمية تفاعلية. خضع أعضاء هيئة التدريس في العلوم لتدريبات متخصصة لتعظيم إمكانات هذه الموارد الجديدة.",
+      "date": "2024-12-10",
+      "author": "Science Department",
+      "arAuthor": "قسم العلوم",
+      "category": "Infrastructure",
+      "arCategory": "البنية التحتية",
+      "image": "https://images.unsplash.com/photo-1532094349884-543bc11b234d?w=800"
+    },
+    {
+      "id": "3",
+      "title": "Students Excel in National Mathematics Olympiad",
+      "arTitle": "تميز الطلاب في الأولمبياد الوطني للرياضيات",
+      "excerpt": "Five of our students secured top positions in the prestigious National Mathematics Olympiad competition.",
+      "arExcerpt": "حصل خمسة من طلابنا على مراكز متقدمة في مسابقة الأولمبياد الوطني المرموقة للرياضيات.",
+      "content": "We are proud to announce that five students from our school have achieved remarkable success in the National Mathematics Olympiad held last month. Emma Johnson secured first place in the senior category, while Michael Chen and Sarah Williams secured second and third positions respectively. The junior category saw outstanding performances from our students as well. This achievement reflects the dedication of our students and the quality of mathematics education provided at our institution. A special felicitation ceremony will be held next week to honor these achievers.",
+      "arContent": "نفخر بإعلان أن خمسة طلاب من مدرستنا حققوا نجاحًا ملحوظًا في الأولمبياد الوطني للرياضيات الذي أقيم الشهر الماضي. حصلت إيما جونسون على المركز الأول في فئة كبار السن، بينما حصل مايكل تشين وسارة ويليامز على المركزين الثاني والثالث على التوالي. شهدت فئة الصغار أداءً متميزًا من طلابنا أيضًا. يعكس هذا الإنجاج تفاني طلابنا وجودة تعليم الرياضيات المقدم في مؤسستنا. سيعقد حفل تكريم خاص الأسبوع المقبل لتكريم هؤلاء المتفوقين.",
+      "date": "2024-12-05",
+      "author": "Academic Team",
+      "arAuthor": "الفريق الأكاديمي",
+      "category": "Achievements",
+      "arCategory": "الإنجازات",
+      "image": "https://images.unsplash.com/photo-1509228468518-180dd4864904?w=800"
+    },
+    {
+      "id": "4",
+      "title": "Winter Break Schedule Announced",
+      "arTitle": "إعلان جدول العطلة الشتوية",
+      "excerpt": "School will observe winter break from December 24, 2024, to January 5, 2025. Classes resume on January 6, 2025.",
+      "arExcerpt": "ستلاحظ المدرسة عطلة شتوية من 24 ديسمبر 2024 إلى 5 يناير 2025. تستأنف الفصول في 6 يناير 2025.",
+      "content": "The school administration has announced the winter break schedule for the academic year 2024-25. Classes will be suspended from December 24, 2024, and will resume on January 6, 2025. During this period, the school office will remain closed except for emergency situations. Parents are advised to ensure that students complete their holiday homework and utilize this time for revision and recreational activities. The school library will be open for students who wish to borrow books. We wish everyone a joyful and restful holiday season.",
+      "arContent": "أعلنت إدارة المدرسة جدول العطلة الشتوية للعام الدراسي 2024-25. سيتم تعليق الفصول من 24 ديسمبر 2024، وستستأنف في 6 يناير 2025. خلال هذه الفترة، سيظل مكتب المدرسة مغلقًا باستثناء حالات الطوارئ. ينصح أولياء الأمور بضمان إكمال الطلاب لواجباتهم العطلية واستخدام هذا الوقت للمراجعة والأنشطة الترفيهية. ستظل مكتبة المدرسة مفتوحة للطلاب الذين يرغبون في استعارة الكتب. نتمنى للجميع موسم عطلات سعيد ومريح.",
+      "date": "2024-12-01",
+      "author": "Administration",
+      "arAuthor": "الإدارة",
+      "category": "Announcements",
+      "arCategory": "الإعلانات",
+      "image": "https://images.unsplash.com/photo-1483921020237-2ff51e8e4b22?w=800"
+    }
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
+}

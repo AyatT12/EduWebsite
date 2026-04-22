@@ -1,0 +1,174 @@
+{
+  "nav": {
+    "home": "Home",
+    "about": "About",
+    "services": "Services",
+    "resources": "Resources",
+    "news": "News",
+    "team": "Team",
+    "login": "Login"
+  },
+  "team": {
+    "pageTitle": "Meet Our Team",
+    "pageDescription": "Dedicated professionals committed to delivering excellence in education management",
+    "leadership": "Leadership",
+    "theTeam": "The Team",
+    "contact": {
+      "email": "Email",
+      "phone": "Phone",
+      "location": "Location"
+    },
+    "roles": {
+      "leadership": "Leadership",
+      "member": "Member"
+    }
+  },
+   "login": {
+      "error": "Invalid email or password. Please try again."
+    },
+  "register": {
+    "passwordMismatch": "Passwords do not match",
+    "passwordTooShort": "Password must be at least 6 characters long",
+    "emailExists": "Email already exists. Please use a different email."
+  },
+  "manageStudents": {
+    "title": "Manage Students",
+    "subtitle": "Add, edit, or remove student records",
+    "addStudent": "Add Student",
+    "searchPlaceholder": "Search students",
+    "table": {
+      "id": "ID",
+      "name": "Name",
+      "class": "Class",
+      "grade": "Grade",
+      "attendance": "Attendance",
+      "gpa": "GPA",
+      "email": "Email",
+      "actions": "Actions"
+    },
+    "noResults": "No students found matching your search.",
+    "noStudents": "No students found. Add your first student!",
+    "editTitle": "Edit student",
+    "deleteTitle": "Delete student",
+    "deleteConfirm": "Are you sure you want to delete this student?",
+    "form": {
+      "name": "Name",
+      "namePlaceholder": "John Doe",
+      "arName": "Arabic Name",
+      "arNamePlaceholder": "جون دو",
+      "grade": "Grade",
+      "class": "Class",
+      "attendance": "Attendance (%)",
+      "attendancePlaceholder": "95.5",
+      "gpa": "GPA",
+      "gpaPlaceholder": "3.75",
+      "email": "Email",
+      "emailPlaceholder": "student@school.edu"
+    },
+    "modal": {
+      "editTitle": "Edit Student",
+      "addTitle": "Add New Student",
+      "cancel": "Cancel",
+      "update": "Update Student",
+      "add": "Add Student"
+    },
+    "errors": {
+      "nameRequired": "Name is required",
+      "arNameRequired": "Arabic name is required",
+      "gradeRequired": "Grade is required",
+      "classRequired": "Class is required",
+      "attendanceRange": "Attendance must be between 0 and 100",
+      "gpaRange": "GPA must be between 0 and 4",
+      "emailInvalid": "Please enter a valid email address"
+    },
+    "filters": {
+      "allGrades": "All Grades",
+      "allClasses": "All Classes",
+      "showingResults": "Showing {{count}} of {{total}} students",
+      "clearFilters": "Clear filters",
+      "sort": {
+        "asc": "↑",
+        "desc": "↓"
+      }
+    },
+    "status": {
+      "loading": "Loading students...",
+      "noEmail": "N/A"
+    },
+    "fetchError": "Error fetching students",
+    "saveError": "Error saving student",
+    "saveFailed": "Failed to save student. Please try again.",
+    "deleteError": "Error deleting student",
+    "deleteFailed": "Failed to delete student. Please try again."
+  },
+  "manageTeachers": {
+    "title": "Manage Teachers",
+    "subtitle": "Add, edit, or remove teacher records",
+    "addTeacher": "Add Teacher",
+    "searchPlaceholder": "Search teachers by name, ID, subject, or email...",
+    "table": {
+      "id": "ID",
+      "name": "Name",
+      "subject": "Subject",
+      "experience": "Experience",
+      "students": "Students",
+      "qualification": "Qualification",
+      "email": "Email",
+      "phone": "Phone",
+      "actions": "Actions"
+    },
+    "noResults": "No teachers found matching your search.",
+    "noTeachers": "No teachers found. Add your first teacher!",
+    "editTitle": "Edit teacher",
+    "deleteTitle": "Delete teacher",
+    "deleteConfirm": "Are you sure you want to delete this teacher?",
+    "form": {
+      "name": "Name",
+      "arName": "Arabic Name",
+      "subject": "Subject",
+      "qualification": "Qualification",
+      "experience": "Experience (years)",
+      "classes": "Number of Classes",
+      "students": "Number of Students",
+      "email": "Email",
+      "phone": "Phone"
+    },
+    "modal": {
+      "editTitle": "Edit Teacher",
+      "addTitle": "Add New Teacher",
+      "cancel": "Cancel",
+      "update": "Update Teacher",
+      "add": "Add Teacher"
+    },
+    "errors": {
+      "nameRequired": "Name is required",
+      "arNameRequired": "Arabic name is required",
+      "subjectRequired": "Subject is required",
+      "emailRequired": "Email is required",
+      "emailInvalid": "Please enter a valid email address",
+      "phoneInvalid": "Please enter a valid phone number",
+      "experienceRange": "Experience must be between 0 and 50 years",
+      "classesRequired": "Number of classes is required",
+      "studentsRequired": "Number of students is required"
+    },
+    "filters": {
+      "allSubjects": "All Subjects",
+      "showingResults": "Showing {{count}} of {{total}} teachers",
+      "clearFilters": "Clear filters"
+    },
+    "status": {
+      "loading": "Loading teachers...",
+      "noEmail": "N/A",
+      "noPhone": "N/A"
+    },
+    "fetchError": "Error fetching teachers",
+    "saveError": "Error saving teacher",
+    "saveFailed": "Failed to save teacher. Please try again.",
+    "deleteError": "Error deleting teacher",
+    "deleteFailed": "Failed to delete teacher. Please try again."
+  },
+  "teacherDashboard" :{
+    "performance" : "Performance"
+  }
+
+}

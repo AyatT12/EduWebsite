@@ -1,0 +1,49 @@
+@import './fonts.css';
+@import './tailwind.css';
+@import './theme.css';
+
+.HeaderCover {
+    background-image: url(../assets/images/2149402672.jpg);
+    height: 80vh;
+    min-height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+
+}
+
+.HeaderCover::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.61);
+    z-index: 1;
+}
+
+.HeaderCover>* {
+    position: relative;
+    z-index: 2;
+}
+
+.LoginCover {
+    background-image: url(../assets/images/2148668535.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.LoginCover::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.61);
+    z-index: 1;
+}
+.LoginCover>* {
+    position: relative;
+    z-index: 2;
+}
