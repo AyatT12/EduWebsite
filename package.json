@@ -2,7 +2,6 @@
   "name": "@EduProject",
   "private": true,
   "version": "0.0.1",
-  "type": "module",
  "scripts": {
   "dev": "vite",
   "server": "json-server --watch db.json --port 3001",
